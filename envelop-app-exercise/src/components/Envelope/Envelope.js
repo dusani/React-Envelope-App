@@ -1,5 +1,6 @@
 import React from 'react';
 import AddressLabel from '../AddressLabel/AddressLabel'
+import Stamp from '../Stamp/Stamp'
 
 let fromPerson = {
   name: 'Mario Blink',
@@ -16,9 +17,10 @@ let toPerson = {
 const Envelope = (props) => {
   return (
     <div className="label">
-      
+
       <div className="sender">
         <AddressLabel person = {fromPerson}/>
+        <Stamp />
       </div>
 
       <div className="recipient">
